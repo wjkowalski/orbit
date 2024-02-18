@@ -20,7 +20,7 @@
     height: 4rem;
     width: 4rem;
     background-color: green;
-    animation: move 5s ease alternate;
+    animation: move 5s linear alternate;
     animation-iteration-count: infinite;
 }
 
