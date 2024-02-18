@@ -1,0 +1,40 @@
+:root {
+   --orbitRight: -200px;
+   --orbitLeft: 200px;
+   --orbitCenter: 0px; 
+}
+
+#box1 {
+    box-sizing: border-box;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    background-color: red;
+    margin: 30vh auto;
+}
+
+#box2 {
+    border-radius: 50%;
+    position: relative;
+    margin: 1rem auto;
+    height: 4rem;
+    width: 4rem;
+    background-color: green;
+    animation: move 5s ease alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(var(--orbitRight));
+    }
+
+    50% {
+        transform: translateX(var(--orbitCenter));
+    }
+
+    100% {
+        transform: translateX(var(--orbitLeft));
+    }
+}
+
